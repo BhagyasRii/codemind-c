@@ -7,12 +7,6 @@ int main()
   int items = 0;
   double res;
   scanf("%d",&n);
-  if ( n > MAX_N)
-  {
-    printf("invalid argument");
-    return -1;
-  }
-
   for(int i =0 ;i < n; ++i)
   {
     scanf("%d",&arr[i]);
