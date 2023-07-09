@@ -2,32 +2,28 @@
 #include <string.h>
 int main()
 {
-    int i,n;
+    int n,j;
     scanf("%d",&n);
-    for(i=1;i<=n;i++)
+    for(j=0;j<n;j++)
     {
-        char s[100];
-        scanf("%s",s);
-        int j,l,c=0;
-        l=strlen(s);
-        for(j=0;j<l;j++)
+    char s[100001];
+    scanf("%s",s);
+    int l=strlen(s),c=0;
+    for(int i=0;i<l;i++)
+    {
+        if(s[i]>='0' && s[i]<='9')
         {
-            if(s[j]>='0' && s[j]<='9')
-            {
-                c++;
-            }
+            c++;
         }
-       if(c==l)
-       {
-           printf("True
-");
-       }
-       else
-       {
-           printf("False
-");
-       }
-        
-        
     }
+    if(c==l)
+    {
+        printf("True
+");
+    }
+    else{
+        printf("False
+");
+    }
+}
 }
