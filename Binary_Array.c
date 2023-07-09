@@ -1,27 +1,28 @@
 #include <stdio.h>
+#include <string.h>
 int main()
 {
-    int n,i,m=0,l=0,k,c=0;
+    int n,j;
     scanf("%d",&n);
-    int ar[n];
-    for(i=0;i<n;i++)
+    int  ar[100001],c=0;
+    for(int i=0;i<n;i++)
     {
         scanf("%d",&ar[i]);
     }
-    for(i=0;i<n;i++)
+    for(int i=0;i<n;i++)
     {
-     if(ar[i]==1 || ar[i]==0)
-     {
-         c+=1;
-     }
+        if(ar[i]==0 || ar[i]<=1)
+        {
+            c++;
+        }
     }
     if(c==n)
-     {
-         printf("True");
-     }
-     else
-     {
-         printf("False");
-     }
-    
+    {
+        printf("True
+");
+    }
+    else{
+        printf("False
+");
+    }
 }
